@@ -7,13 +7,6 @@
     background-color:#f1f1f1;
 }
 
-.main img{
-    position:absolute;
-    top: 100px;
-    left: 200px;
-
-    width: 15rem
-}
 
 .input-form{
     width:30%;
