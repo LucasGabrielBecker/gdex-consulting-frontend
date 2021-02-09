@@ -1,0 +1,86 @@
+.main{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#f1f1f1;
+}
+
+.main img{
+    position:absolute;
+    top: 100px;
+    left: 200px;
+
+    width: 15rem
+}
+
+.input-form{
+    width:30%;
+    height: 40%;
+    background-color:#FFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+    margin-top: -150px;
+}
+
+.input-form .line1{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.input-form .line1 span{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.input-form .line1 p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.input-form .line1 input::-webkit-input-placeholder{
+    color: rgb(180, 180, 180);
+}
+.input-form .line1 input{
+    width: 70%;
+    min-height: 50px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+    padding: 0px 10px;
+}
+.input-form .line1 input:focus{
+    outline: none;
+    border: 1px solid #0066FF;
+}
+.input-form .line1 input:focus::-webkit-input-placeholder{
+    font-size: 12px;
+}
+
+.input-form .line1 .continue{
+    background-color: #0066FF;
+    width: 70%;
+    min-height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:#FFF;
+    font-size: 1.7rem ;
+    border-radius: 9px;
+
+}
+
+.input-form .line1 .continue:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5rem;
+}
+
+.main .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row;
+}
+.main .header .left-side{
+    width: 30%;
+}
+.main .header .left-side img{
+    width: 120px;
+}
+.main .header .right-side{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .header .right-side ul{
+    list-style-type: none;
+}
+.main .header .right-side ul li{
+    display: inline;
+    font-size: 20px;
+    margin-left: 5rem;
+}
+.main .header .right-side .btn-entrar{
+    background-color: transparent;
+    border: 1px solid #ec38bc;
+    width: 13rem;
+    height:4rem;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color:#000000;
+}
+.main .header .right-side .classLink{
+    text-decoration: none;
+}
+.main .header .right-side .btn-entrar a span{
+    color: #000000;
+    
+}
+.main .header .right-side .btn-entrar:hover{
+    border: transparent;
+    background-color: #ec38bc21;
+    cursor: pointer;
+}
+.main .main-content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.main .main-content .text-content{
+    max-width: 600px;
+}
+
+.main .main-content .text-content h3{
+    font-size: 5rem;
+    margin-bottom: 1.3rem;
+}
+
+.main .main-content .text-content p{
+    font-size: 2rem;
+}
+
+.main .main-content .text-content .btn-orcamento{
+    margin-top: 2rem;
+    background-color: #000000;
+    max-width: 250px;
+    height: 4rem;
+    border-radius:1rem;
+    color:#FFFFFF;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+.main .main-content .text-content .btn-orcamento:hover{
+    cursor:pointer;
+    background-color: #131313;
+}
+
+.main .main-content .workers img{
+    width: 80rem;
+}
