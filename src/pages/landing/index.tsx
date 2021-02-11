@@ -1,44 +1,44 @@
-import React from 'react';
-import LogoImg from "../../assets/logo_gdex.svg"
-import WorkersImg from "../../assets/workers.svg"
-import "./styles.css"
-import { Link } from 'react-router-dom'
-
+import React,{useState} from 'react';
+import { Container,MainContent, Header } from "./styles"
+import {Link} from "react-router-dom"
+import GdexLogo from "../../assets/logo_gdex.svg"
+import Workers from "../../assets/workers.svg"
 
 const Landing: React.FC = () => {
+  const [hovered, setHovered] = useState(false)
+  const handleHovered = () =>{
+    setHovered(!hovered)
+  }
   return (
-      <div className="main">
-        <div className="header">
-              <div className="left-side">
-                  <img src={LogoImg} alt="Logo Gdex"/>
-              </div>
-              <div className="right-side">
-                <ul>
-                      <li>Para empresas</li>
-                      <li>Para Parceiros</li>
-                      <li>Soluções</li>
-                </ul>
-                <Link to="/login" className="classLink">
-                    <div className="btn-entrar">
-                        <span>Entrar</span>
-                    </div>
-                </Link>
-              </div>
-          </div>
-        <div className="main-content">
-                <div className="text-content">
-                    <h3>Conecte seu projeto com os melhores squads do mercado.</h3>
-                    <p>Conectamos você com squads remotos de alta performance, e juntos criamos seu produto com as melhores práticas e metodologias do mercado.</p>
-
-                    <div className="btn-orcamento">
-                        Solicite uma demonstração
-                    </div>
-                </div>
-                <div className="workers">
-                    <img src={WorkersImg} alt="Trabalhadores Image"/>
-                </div>
-            </div>
+    <Container>
+      <Header>
+      <Link to="/"><img src={GdexLogo} alt="appLogo"/></Link>
+      <div className="">
+        <ul>
+          <li>Para empresas</li>
+          <li>Para Parceiros</li>
+          <li>Soluções</li>
+        </ul>
       </div>
+      <Link to="/login">
+        <div className="button-entrar">
+          Entrar
+        </div>
+      </Link>
+      </Header>
+      <MainContent>
+        <div className="text-content">
+          <p>Conecte seu projeto com os melhores squads do mercado.</p>
+          <span>Conectamos você com squads remotos de alta performance, e juntos criamos seu produto com as melhores práticas e metodologias do mercado.</span>
+          <div className="solicitacao">
+            Solicite uma demonstração
+          </div>
+        </div>
+        <div className="workers">
+          <img src={Workers} alt="workers working" />
+        </div>
+      </MainContent>
+    </Container>
   )
 }
 
