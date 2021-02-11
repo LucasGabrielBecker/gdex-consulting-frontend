@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Login from "./pages/login"
-import Landing from "./pages/Landing"
+import Landing from "./pages/landing"
 
 export default function Routes() {
   return (
