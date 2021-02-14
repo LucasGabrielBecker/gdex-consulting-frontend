@@ -3,7 +3,8 @@ import axios from 'axios';
 import api from '../../utils/api'
 import {useHistory} from 'react-router-dom'
 import GdexLogo from "../../assets/logo_gdex.svg"
-import "./style.css"
+import { Container } from "./styles"
+
 
 
 
@@ -13,7 +14,7 @@ const Login: React.FC = () => {
     const history = useHistory()
 
 
-    const handleSubmit = (e:any) => {
+    const submitEmail = (e:any) => {
         e.preventDefault()
         api.post("/users/authenticate", {
             email,
@@ -28,18 +29,18 @@ const Login: React.FC = () => {
     }
 
   return (
-    <div className="main">
+    <Container>
         <img src={GdexLogo} alt="LogoGdex"/>
         <div className="input-form">
             <div className="line1">
                 <span>Entre na sua conta</span>
                 <p>Insira seu e-mail</p>
                 <input type="text" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)}/>
-                <div className="continue" onClick={handleSubmit}>Continuar</div>
+                <div className="continue" onClick={submitEmail}>Continuar</div>
             </div>
 
         </div>
-    </div>
+    </Container>
   )
 }
 
