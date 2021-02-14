@@ -1,7 +1,8 @@
 import { NowRequest, NowResponse } from '@vercel/node'
 
 export default function handler(request: NowRequest, response: NowResponse) {
-    res.statusCode = 200
-    res.setHeader('Content-Type', 'application/json')
-    res.json({ name: 'John Doe' })
+    request.statusCode = 200
+    response.setHeader("content-type", "application/json")
+    response.json({name:"John Doe"})
+    
   }
