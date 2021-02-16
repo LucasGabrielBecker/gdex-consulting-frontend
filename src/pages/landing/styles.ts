@@ -1,28 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
   background-color: #d1d1d1;
   width: 100vw;
   height: 100vh;
 
+  @media(min-width: 768px) {
+    .anchors{
+        display:none;
+    }
+  }
+}
 `;
 
 export const Header = styled.div`
-    width: 100%;
-    height: 10%;
-    min-height:70px;
-    padding: 2rem 3rem;
-    background-color:#FFF;
-    display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 'logo infos button';
-    align-items: center;
-    justify-content:center;
-    
-
     img{
         grid-area: logo;
         display:flex;

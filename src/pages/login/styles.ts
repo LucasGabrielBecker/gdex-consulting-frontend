@@ -41,6 +41,7 @@ export const Container = styled.div`
       margin-bottom: 3rem;
       width: 80%;
       height: 80%;
+      position: relative;
 
       span {
         font-size: 3rem;
@@ -86,6 +87,21 @@ export const Container = styled.div`
           cursor: pointer;
           background-color: #1974fc;
         }
+      }
+
+      .iconGoBack{
+        position:absolute;
+        top: 10px;
+        left: -20px;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      #registerSpan{
+        font-size: 1.2rem;
+        margin-top: 20px;
       }
     }
   }

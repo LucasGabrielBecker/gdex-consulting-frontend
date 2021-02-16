@@ -6,17 +6,21 @@ import {
   Link
 } from "react-router-dom";
 import Login from "./pages/login"
-import Landing from "./pages/landing"
+import MainPage from "./pages/mainPage"
+import ThirdStep from "./pages/thirdStep"
 
 export default function Routes() {
   return (
     <Router>
         <Switch>
           <Route exact path="/">
-            <Landing />
+            <MainPage />
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/third">
+            <ThirdStep />
           </Route>
         </Switch>
     </Router>
