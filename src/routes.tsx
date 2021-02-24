@@ -8,6 +8,7 @@ import {
 import Login from "./pages/login"
 import MainPage from "./pages/mainPage"
 import ThirdStep from "./pages/thirdStep"
+import RegisterPage from "./pages/register"
 
 export default function Routes() {
   return (
@@ -21,6 +22,9 @@ export default function Routes() {
           </Route>
           <Route path="/third">
             <ThirdStep />
+          </Route>
+          <Route path="/register">
+            <RegisterPage />
           </Route>
         </Switch>
     </Router>
